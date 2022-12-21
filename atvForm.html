@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="events.js"></script>
+</head>
+<body>
+  <!-- /**
+ * criar um form que tenha campos senha, confirme a senha e um botão
+ * 
+ * ao clicar no botão, aciona uma função que irá receber os dados dos campos, e verificar:
+ * 
+ * se os dois valores forem diferentes, emitir um console log
+ * dizendo senhas não batem
+ */ -->
+ <form>
+  <input type="password" name="senha" id="senha" placeholder="Nova senha"><br>
+  <input type="password" name="confirma" id="confirma" placeholder="Confirme a senha"><br>
+
+  <input type="button" value="Enviar" onclick="verifica(this.form)">
+ </form>
+
+</body>
+</html>

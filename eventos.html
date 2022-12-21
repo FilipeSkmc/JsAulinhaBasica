@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="events.js"></script>
+  <style>
+    #area{
+      background-color: aquamarine;
+      width: 500px;
+      height: 400px;
+    }
+    img{
+      width: 400;
+      height: 200;
+    }
+  </style>
+</head>
+<body>
+  <h1 onclick="clicou()">Quem é esse Pokemon</h1>
+  <!-- ao passar o mouse sobre a div, as caracteristicas 
+  do css isão mudar , 
+
+  onmouseover - mouse sobre elemento ativa a função 
+
+  onmouseout - mouse eh removido do elemento, ativa a função
+-->
+  <div 
+    id="area" 
+    onmouseover="mudaCss()"
+    onmouseout="mudaCssNovamente()"
+  ></div>
+
+  <div id="img">
+    <img id="pokemon" src="qm.png" alt="" onmouseover="revelaPokemon(this)" 
+    onmouseout="ocultaPokemon()">
+  </div>
+</body>
+</html>
