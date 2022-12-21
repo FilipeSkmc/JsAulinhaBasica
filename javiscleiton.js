@@ -1,13 +1,3 @@
-function pega(padaria){
-  console.log(padaria.ops.value);
-  // if(form.novasenha.value !== form.confirmasenha.value){
-  //   form.novasenha.style.borderColor = 'red';
-  //   form.confirmasenha.style.borderColor = 'red';
-  // }else{
-
-  // }
-}
-
 function pegaInput(input){
   input.value = (input.value.toUpperCase());
 }
